@@ -159,7 +159,7 @@ Take the screenshots yourself after opening `index.html` in a browser. In most b
 ## GitHub Repository
 
 GitHub Repository:
-[PASTE YOUR GITHUB REPOSITORY URL HERE]
+https://github.com/SulavShrestha-sulu/-html-css-assignment.git
 
 ### How to upload this project to GitHub
 
@@ -171,10 +171,10 @@ GitHub Repository:
    git add index.html css/style.css images/ screenshots/ README.md
    git commit -m "Add HTML and CSS navigation bar and card layout assignment"
    git branch -M main
-   git remote add origin [PASTE YOUR GITHUB REPOSITORY URL HERE]
+   git remote add origin https://github.com/SulavShrestha-sulu/-html-css-assignment.git
    git push -u origin main
    ```
-4. Replace `[PASTE YOUR GITHUB REPOSITORY URL HERE]` in this README with your real repository URL.
+4. The README already contains your repository URL above.
 5. Check on GitHub that `index.html`, `css/style.css`, `images/`, `screenshots/`, and `README.md` are all visible.
 
 ## Image Credits
