@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnHub - A simple course website built with HTML5 and CSS3 to demonstrate navigation bar, cards, Flexbox, Grid and responsive design.">
+    <title>LearnHub | Course Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="brand">LearnHub</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main>
+
+        <!-- Hero / Introduction section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Learn Web Skills with Simple, Practical Courses</h1>
+                <p>
+                    LearnHub is a practice course website created for an HTML &amp; CSS assignment.
+                    It demonstrates a responsive navigation bar and a responsive card layout
+                    using Flexbox, CSS Grid, and media queries.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Browse Courses</a>
+                    <a href="#about" class="btn btn-outline">About This Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2>About This Website</h2>
+                <p>
+                    This website is built with only HTML5 and CSS3. The goal is to practise
+                    semantic HTML, the CSS box model, Flexbox for the navigation bar,
+                    CSS Grid for the course cards, hover effects, and responsive design.
+                </p>
+                <ul class="about-list">
+                    <li>Semantic tags: <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code></li>
+                    <li>Navigation layout with Flexbox</li>
+                    <li>Course card layout with CSS Grid</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Card section: 6 course cards -->
+        <section class="courses" id="courses">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <p class="section-subtitle">Six beginner-friendly topics. Each card shows the same structure: image, category, title, description, level info, and a link.</p>
+
+                <div class="card-grid">
+
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <img src="images/web-development.jpg" alt="Web development course">
+                        <div class="card-body">
+                            <span class="tag">Web</span>
+                            <h3>Web Development</h3>
+                            <p>Learn HTML, CSS, Flexbox, and Grid by building small web pages step by step.</p>
+                            <p class="meta">Beginner &bull; 8 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <img src="images/python.jpg" alt="Python programming course">
+                        <div class="card-body">
+                            <span class="tag">Programming</span>
+                            <h3>Python Programming</h3>
+                            <p>Understand variables, loops, functions, and lists through short practice exercises.</p>
+                            <p class="meta">Beginner &bull; 6 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <img src="images/java.jpg" alt="Java programming course">
+                        <div class="card-body">
+                            <span class="tag">Programming</span>
+                            <h3>Java Programming</h3>
+                            <p>Learn classes, objects, and basic object-oriented ideas with simple Java examples.</p>
+                            <p class="meta">Beginner &bull; 8 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="card">
+                        <img src="images/database.jpg" alt="Database management course">
+                        <div class="card-body">
+                            <span class="tag">Data</span>
+                            <h3>Database Management</h3>
+                            <p>Practise tables, keys, and basic SQL queries such as SELECT, INSERT, and JOIN.</p>
+                            <p class="meta">Intermediate &bull; 6 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="card">
+                        <img src="images/ui-ux.jpg" alt="UI UX design course">
+                        <div class="card-body">
+                            <span class="tag">Design</span>
+                            <h3>UI/UX Design</h3>
+                            <p>Learn spacing, typography, colour, and layout basics for clean, readable screens.</p>
+                            <p class="meta">Beginner &bull; 5 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="card">
+                        <img src="images/cloud.jpg" alt="Cloud computing course">
+                        <div class="card-body">
+                            <span class="tag">Cloud</span>
+                            <h3>Cloud Computing</h3>
+                            <p>Understand servers, storage, and deployment concepts used in modern web hosting.</p>
+                            <p class="meta">Intermediate &bull; 6 Weeks</p>
+                            <a href="#courses" class="btn btn-card">View Course</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services section (simple, so nav link has a target) -->
+        <section class="info-strip" id="services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="info-columns">
+                    <div class="info-box">
+                        <h3>Study Material</h3>
+                        <p>Short notes and examples for each topic covered in the courses above.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Practice Tasks</h3>
+                        <p>Small exercises after each lesson so you can practise HTML and CSS.</p>
+                    </div>
+                    <div class="info-box">
+                        <h3>Guidance</h3>
+                        <p>Clear learning order from beginner pages to responsive layouts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section (simple, so nav link has a target) -->
+        <section class="info-strip info-alt" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <p>Try these mini-projects after finishing the courses: a personal profile page, a course list page like this one, and a responsive photo gallery. All can be built with only HTML and CSS.</p>
+            </div>
+        </section>
+
+    </main>
+
+    
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div>
+                <h3>LearnHub</h3>
+                <p>A student practice website for learning HTML &amp; CSS navigation bars and card layouts.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: [your-email@example.com]</p>
+                <p>Replace this with your real contact when submitting.</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 LearnHub. Built with HTML5 and CSS3 for a university practical assignment.</p>
+    </footer>
+
+</body>
+</html>
