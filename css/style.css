@@ -301,16 +301,16 @@ img {
 
 /* ============ FOOTER ============ */
 .site-footer {
-    background-color: var(--text-color);
-    color: #cbd5e1;
-    padding: 40px 0 20px;
+  text-align: center;      
+  padding: 20px;
+  background-color: #383467; 
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center; 
 }
 
 .site-footer h3 {
